@@ -1,0 +1,27 @@
+.imggallery {
+  display: flex;
+  height: 20rem;
+  gap: 1rem;
+  flex-direction: row;
+}
+.imggallery div {
+  border-radius: 5%;
+  flex: 2;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  flex-wrap: wrap;
+}
+.imggallery div:hover {
+  flex: 5;
+}
+@media screen and (max-width: 780px) {
+  .imggallery {
+    flex-direction: column;
+    height: 50rem;
+  }
+  .imggallery div:hover {
+    flex: 3;
+  }
+}

@@ -1,0 +1,14 @@
+// import
+@import "./scss/variables.scss";
+@import "./components/Navbar/navbar";
+@import "./content/Hero/hero";
+@import "./content/section1/section";
+@import "./components/divider/Divider.scss";
+@import "./content/section2/section2";
+@import "./content/gallery/gallery";
+@import "./content/gallery2/gallery2";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

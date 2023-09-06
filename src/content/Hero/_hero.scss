@@ -1,0 +1,20 @@
+.headerBackground {
+  max-height: 70vh;
+  // background-attachment: fixed;
+  // background-position: center;
+  img {
+    height: 30rem;
+    @media screen and (max-width: 700px) {
+      height: auto;
+    }
+  }
+}
+.hero-text {
+  padding: 3rem;
+  background-color: $main-color;
+  color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

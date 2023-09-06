@@ -1,0 +1,43 @@
+.sec2 {
+  height: auto;
+  background-color: $primary-color;
+  color: $main-color;
+  @media screen and (max-width: 780px) {
+    height: fit-content;
+  }
+  .box {
+    border-radius: 0.6rem;
+    height: 250px;
+    background-color: $secondry-color;
+    margin: 10px;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    .box-outer {
+      position: absolute;
+      transition: all 0.6s ease;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    &:hover {
+      .box-inner {
+        top: 0%;
+      }
+
+      h1 {
+        display: none;
+      }
+    }
+    .box-inner {
+      padding: 3rem 1rem;
+      position: absolute;
+      top: 100%;
+      transition: 0.4s ease-in;
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
